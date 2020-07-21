@@ -1,0 +1,15 @@
+// UTILITIES: BORDER
+
+.u-border {
+  &--1 {
+    border: 1px solid var(--color-grey);
+  }
+}
+
+// Border Colors
+
+.u-border-color {
+  &--primary {
+    border-color: var(--color-primary);
+  }
+}
