@@ -48,16 +48,19 @@
       justify-self: flex-end;
     }
 
-    svg {
+    a {
       margin-left: var(--space-xs);
       margin-right: var(--space-xs);
-      width: var(--icon-xs);
-      height: var(--icon-xs);
-      fill: var(--color-white);
 
       &:not(:last-child) {
         margin-bottom: var(--space-lg);
       }
+    }
+
+    svg {
+      width: var(--icon-xs);
+      height: var(--icon-xs);
+      fill: var(--color-white);
     }
   }
 }
