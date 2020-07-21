@@ -1,0 +1,154 @@
+//
+// #MAIN
+//
+
+// CONTENTS
+
+//  VENDORS
+//  Fonts...............Imported fonts
+//  Icons...............Imported icons
+
+// @import "00_vendors/*";
+@import "00_vendors/vendors.aos-animate";
+@import "00_vendors/vendors.bootstrap-grid";
+@import "00_vendors/vendors.glidejs";
+
+//  TOOLS
+//  All..................Because our Tools layer doesn’t actually produce any
+//                       CSS, we can safely glob all of the files into one import
+//                       without risk of bloating our compiled stylesheet. This
+//                       also allows us to easily recycle all of our
+//                       project-level tooling into other Sass file/projects.
+//                       Please see `tools/_all.scss` for a full table of
+//                       contents.
+
+@import "01_tools/tools.functions";
+@import "01_tools/tools.mixins";
+
+//  SETTINGS
+//  Custom...............Custom-specific theming and config.
+//  All..................Because our Settings layer doesn’t actually produce any
+//                       CSS, we can safely glob all of the files into one import
+//                       without risk of bloating our compiled stylesheet. This
+//                       also allows us to easily recycle all of our
+//                       project-level settings into other Sass file/projects.
+//                       Please see `settings/_all.scss` for a full table of
+//                       contents.
+
+@import "02_settings/settings.all";
+
+//  GENERIC
+//  Box-sizing...........Better default `box-sizing`.
+//  Normalize.css........A level playing field.
+//  Reset................A pared back reset to remove margins.
+
+// @import "03_generic/generic.normalize";
+@import "03_generic/generic.box-sizing";
+@import "03_generic/generic.reset";
+
+//  ELEMENTS
+//  Page.................Page-level styles (HTML element).
+//  Headings.............Heading styles.
+//  Links................Hyperlink styles.
+//  Lists................Default list styles.
+//  Images...............Base image styles.
+//  Quotes...............Styling for blockquotes, etc.
+
+@import "04_elements/elements.base";
+@import "04_elements/elements.headings";
+@import "04_elements/elements.links";
+
+//  OBJECTS
+//  Wrappers.............Wrappers and page constraints.
+//  Layout...............Generic layout module.
+//  Headline.............Simple object for structuring heading pairs.
+//  Media................The media object.
+//  List-bare............Lists with no bullets or indents.
+//  List-inline..........Simple abstraction for setting lists out in a line.
+//  Crop.................A container for cropping image and media content.
+
+// @import "05_objects/objects.containers";
+
+//  COMPONENTS
+//  Logo.................Make our logo a reusable component.
+//  Page.................Full page wrapper.
+//  Page-head............Page header styles.
+//  Page-foot............Page footer styles.
+//  Nav primary..........The site’s main nav.
+//  Nav secondary........Secondary nav styles.
+//  Nav tertiary.........Horizontally scrolling nav.
+//  Masthead.............Site’s main masthead.
+//  Sub-content..........Secondary/supporting content.
+//  Panel................Simple panelled boxout.
+//  Score................Score lozenge for place ratings.
+//  Buttons..............Button styles.
+//  Avatar...............General avatar styles.
+//  Testimonial..........Quote styles.
+//  Calendar.............Simple static calendar component.
+//  Headline.............Basic heading style for generic headlines.
+//  Promo................Promotional box styling.
+//  Pagination...........Responsive pagination component.
+
+@import "06_components/components.backdrop";
+@import "06_components/components.buttons";
+@import "06_components/components.hamburger-btn";
+@import "06_components/components.logo";
+@import "06_components/components.navbar";
+@import "06_components/components.tile-menu";
+@import "06_components/components.input-group";
+@import "06_components/components.input-area";
+@import "06_components/components.search";
+@import "06_components/components.magnifying-glass";
+@import "06_components/components.glidejs";
+@import "06_components/components.testimonial";
+@import "06_components/components.text-components";
+@import "06_components/components.payment-logos";
+@import "06_components/components.footer";
+@import "06_components/components.footer-nav";
+@import "06_components/components.social-icon";
+@import "06_components/components.banner";
+@import "06_components/components.game-card";
+@import "06_components/components.fade";
+@import "06_components/components.bonus-card";
+@import "06_components/components.scoop";
+@import "06_components/components.nav";
+@import "06_components/components.sidebar";
+// @import "06_components/components.tabs";
+// @import "06_components/components.accordion";
+// @import "06_components/components.dropdown";
+
+//  Pages
+//  Home................Specific styles for a home page
+
+@import "07_pages/pages.home";
+
+//  THEMES
+//  Red..................Simple red theme for the site.
+//  Custom...............Custom-specific overrides.
+
+// @import "08_themes/*";
+
+//  UTILITIES
+//  Headings.............Reassigning our heading styles to helper classes.
+//  Widths...............Simple width helper classes.
+//  Healthcheck..........Visual health-check tool.
+//  Debug................Highlight potentially troublesome code.
+//  Shame.css............Short-term hacks and quick-fixes.
+
+@import "08_utilities/utilities.typography";
+@import "08_utilities/utilities.headings";
+@import "08_utilities/utilities.colors";
+@import "08_utilities/utilities.spacing";
+@import "08_utilities/utilities.flex";
+// @import "08_utilities/utilities.grid";
+@import "08_utilities/utilities.display";
+// @import "08_utilities/utilities.text";
+@import "08_utilities/utilities.position";
+@import "08_utilities/utilities.overflow";
+@import "08_utilities/utilities.opacity";
+@import "08_utilities/utilitites.width";
+// @import "08_utilities/utilities.borders";
+// @import "08_utilities/utilities.shadows";
+// @import "08_utilities/utilities.healthcheck";
+// @import "08_utilities/utilities.debug";
+// @import "08_utilities/utilities.shame";

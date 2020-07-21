@@ -1,0 +1,93 @@
+// UTILITIES: TYPOGRAPHY
+
+// WEIGHTS
+
+.u-text-weight {
+  &--light {
+    font-weight: var(--font-light);
+  }
+
+  &--regular {
+    font-weight: var(--font-regular);
+  }
+
+  &--medium {
+    font-weight: var(--font-medium);
+  }
+
+  &--semi-bold {
+    font-weight: var(--font-semi-bold);
+  }
+
+  &--bold {
+    font-weight: var(--font-bold);
+  }
+
+  &--extra-bold {
+    font-weight: var(--font-extra-bold);
+  }
+}
+
+// SIZES
+
+.u-text-size {
+  &--xxs {
+    font-size: var(--text-xxs);
+  }
+
+  &--xs {
+    font-size: var(--text-xs);
+  }
+
+  &--sm {
+    font-size: var(--text-sm);
+  }
+
+  &--md {
+    font-size: var(--text-md);
+  }
+
+  &--lg {
+    font-size: var(--text-lg);
+  }
+
+  &--xl {
+    font-size: var(--text-xl);
+  }
+
+  &--xxl {
+    font-size: var(--text-xxl);
+  }
+}
+
+// TEXT TRANSFORM
+
+.u-text-transform {
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+// TEXT ALIGN
+
+.u-text-align {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--justify {
+    text-align: justify;
+  }
+}

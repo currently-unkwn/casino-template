@@ -1,0 +1,13 @@
+// Components: Social Icon
+
+.c-social-icon {
+  svg {
+    height: var(--icon-md);
+    width: var(--icon-md);
+    transition: all 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

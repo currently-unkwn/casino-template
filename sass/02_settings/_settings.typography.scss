@@ -1,0 +1,57 @@
+// SETTINGS: TYPOGRAPHY
+
+:root {
+  // Fonts: Families
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+
+  // Fonts: Weights
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-bolder: 800;
+  --font-extra-bold: 900;
+
+  // Body font size
+  --text-base-size: 1em; // 16px
+
+  // Type scale
+  --type-scale-ratio: 1.067;
+
+  // Fonts: sizes based on scale
+  // 10
+  // 12
+  // 14
+  // 16
+  // 18
+  // 24
+  // 40
+
+  // Type Scale Calculator by Codyhouse
+  --text-xxs: calc(
+    1em / var(--type-scale-ratio) / var(--type-scale-ratio) /
+      var(--type-scale-ratio)
+  ); // 11.24px
+  --text-xs: calc(var(--text-xxs) * var(--type-scale-ratio)); // 12.64px
+
+  --text-sm: calc(var(--text-xs) * var(--type-scale-ratio)); // 14.22px
+  --text-md: calc(
+    var(--text-sm) * var(--type-scale-ratio) * var(--type-scale-ratio)
+  ); // 18px
+  --text-lg: calc(var(--text-md) * var(--type-scale-ratio)); // 20px
+  --text-xl: calc(var(--text-lg) * var(--type-scale-ratio)); // 22.78px
+  --text-xxl: calc(var(--text-xl) * var(--type-scale-ratio)); // 25.63px
+  // --text-xxxl: calc(1em * var(--type-scale-ratio));
+
+  // Baseline
+  --heading-line-height: 1.2;
+  --body-line-height: 1.5;
+}
+
+@media only screen and (min-width: $media-md) {
+  :root {
+    --type-scale-ratio: 1.125;
+  }
+}

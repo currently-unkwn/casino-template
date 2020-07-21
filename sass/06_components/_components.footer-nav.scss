@@ -1,0 +1,44 @@
+// Components: Footer Nav
+
+.c-footer-nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+
+    @media only screen and (min-width: $media-lg) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    // margin-left: var(--space-4xl);
+    // margin-right: var(--space-4xl);
+    &:not(:last-child) {
+      margin-bottom: var(--space-md);
+    }
+
+    @media only screen and (min-width: $media-lg) {
+      margin-left: var(--space-4xl);
+      margin-right: var(--space-4xl);
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: lightness(var(--color-primary), 1.2);
+    }
+  }
+}

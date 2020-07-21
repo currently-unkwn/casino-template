@@ -1,0 +1,108 @@
+//
+// #RESET
+//
+
+// A very simple reset that sits on top of Normalize.css.
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+figure,
+table,
+th,
+td,
+caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+// Remove trailing margins from nested lists.
+
+li > {
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// Remove spaces between table cells.
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+// Removes discs from ul
+
+ul {
+  list-style: none;
+}
+
+// Inherit typography for forms and buttons
+
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+// This style makes it easier to work with click events if there are HTML elements inside a button
+
+button * {
+  pointer-events: none;
+}
+
+// Default styling for a button
+
+button {
+  appearance: none;
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+// Making media objects responsive and removing line-height space
+
+embed,
+iframe,
+img,
+object,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+// Hidden element
+
+[hidden] {
+  display: none !important;
+}
+
+// Remove underline from links
+
+a {
+  text-decoration: none;
+}

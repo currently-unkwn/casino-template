@@ -1,0 +1,61 @@
+// UTILITIES: COLORS
+
+// PRIMARY
+
+.u-color-primary {
+  &--text {
+    color: var(--color-primary);
+  }
+
+  &--bg {
+    background-color: var(--color-primary);
+  }
+}
+
+.u-color-primary-lighter {
+  &--text {
+    color: var(--color-primary-lighter);
+  }
+
+  &--bg {
+    background-color: var(--color-primary-lighter);
+  }
+}
+
+// SECONDARY
+
+.u-color-secondary {
+  &--text {
+    color: var(--color-secondary);
+  }
+
+  &--bg {
+    background-color: var(--color-secondary);
+  }
+}
+
+// WARM
+
+// COOL
+
+// NEUTRAL
+
+.u-color-white {
+  &--text {
+    color: var(--color-white);
+  }
+
+  &--bg {
+    background-color: var(--color-white);
+  }
+}
+
+.u-color-black {
+  &--text {
+    color: var(--color-black);
+  }
+
+  &--bg {
+    background-color: var(--color-black);
+  }
+}

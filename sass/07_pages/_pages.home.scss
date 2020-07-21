@@ -1,0 +1,120 @@
+// Pages: Home
+
+// Hero Section
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/hero_mob.jpg);
+  background-size: cover;
+
+  @media only screen and (min-width: $media-sm) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../img/hero.jpg);
+  }
+
+  @media only screen and (min-width: $media-md) {
+    background-image: url(../img/hero.jpg);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media only screen and (min-width: $media-md) {
+      padding-top: var(--space-3xl);
+      padding-bottom: var(--space-3xl);
+      flex-direction: row;
+    }
+  }
+
+  &__overlay-text {
+    flex-basis: 100%;
+    order: 2;
+    // align-self: flex-end;
+
+    @media only screen and (min-width: $media-md) {
+      order: 1;
+      flex-basis: 50%;
+      align-self: flex-end;
+    }
+  }
+
+  &__cta {
+    padding: var(--space-4xl) var(--space-md) var(--space-xl) var(--space-md);
+    flex-basis: 100%;
+    order: 1;
+
+    @media only screen and (min-width: $media-sm) {
+      padding: var(--space-4xl) var(--space-5xl) var(--space-xl)
+        var(--space-5xl);
+    }
+
+    @media only screen and (min-width: $media-md) {
+      flex-basis: 50%;
+      order: 2;
+      background-color: alpha(var(--color-black), 0.9);
+    }
+
+    @media only screen and (min-width: $media-xl) {
+      padding: var(--space-4xl) var(--space-5xl) var(--space-4xl)
+        var(--space-5xl);
+    }
+
+    @media only screen and (min-width: $media-xl) {
+      max-width: 37.5rem;
+    }
+
+    a {
+      margin-top: var(--space-xxl);
+
+      @media only screen and (min-width: $media-md) {
+        margin-top: var(--space-4xl);
+      }
+    }
+  }
+}
+
+// Bonuses Section
+
+.bonuses {
+  background-image: url(../img/bonuses-bg_mob.jpg);
+  background-size: cover;
+
+  @media only screen and (min-width: $media-sm) {
+    background-image: url(../img/bonuses-bg.jpg);
+  }
+
+  &__subscribe-group {
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: $media-md) {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: center;
+    }
+  }
+
+  &__subscribe-area {
+    margin-bottom: var(--space-xxl);
+
+    @media only screen and (min-width: $media-md) {
+      margin-bottom: 0;
+      margin-right: var(--space-4xl);
+      max-width: 28.125rem;
+    }
+  }
+}
+
+// Payment Options Section
+
+// .payment-options {
+//   margin: 0 auto;
+//   width: 100%;
+//   text-align: center;
+
+//   @media only screen and (min-width: $media-lg) {
+//     width: 75%;
+//   }
+// }

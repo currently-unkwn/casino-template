@@ -1,0 +1,25 @@
+// Components: Banner
+
+.c-banner {
+  text-align: left;
+  background-size: cover;
+  background-position: left;
+
+  @media only screen and (min-width: $media-sm) {
+    text-align: center;
+  }
+
+  &--sport {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../img/banner-sport_mob.jpg);
+
+    @media only screen and (min-width: $media-sm) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../img/banner-sport.jpg);
+    }
+  }
+
+  .c-text-component {
+    --text-vspace-multiplier: 3.951;
+  }
+}

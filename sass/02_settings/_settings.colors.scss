@@ -1,0 +1,57 @@
+// SETTINGS: COLORS
+
+// Colors: Brand
+$brand-1: #3abb8d; //Green
+$brand-1-light: #75c8aa;
+$brand-1-x-light: #c7e9dd;
+$brand-2: #313c5a; // Blue: Dark
+$brand-2-light: #41568c;
+
+// Colors: Warm
+$red-crimson: #d05858;
+
+// Colors: Cool
+$blue-aqua: #3e9cd0;
+
+// Colors: Neutral
+$black: #000;
+$gray-coal: #222;
+$gray-lead: #666;
+$gray-cement: #999;
+$gray-titanium: #aaa;
+$gray-cloud: #dadee8;
+$gray-mist: #f1f1f1;
+$white: #fff;
+
+// Colors: Typography
+$color-link: $brand-1;
+$color-font: $gray-lead;
+
+:root {
+  // Colors: Project Primary
+  @include defineColorHSL(--color-primary, 38, 55%, 65%);
+  @include defineColorHSL(--color-primary-light, 42, 78%, 77%);
+  @include defineColorHSL(--color-primary-lighter, 39, 57%, 89%);
+
+  // Colors: Warm
+
+  @include defineColorHSL(--color-gold, 45, 100%, 51%);
+
+  // Colors: Cool
+
+  @include defineColorHSL(--color-cool, 213, 17%, 51%);
+
+  // Colors: Neutral
+
+  @include defineColorHSL(--color-white, 0, 0%, 100%);
+  @include defineColorHSL(--color-black, 0, 0%, 7%);
+  @include defineColorHSL(--color-grey, 0, 0%, 44%);
+  @include defineColorHSL(--color-grey-dark, 0, 0%, 27%);
+  @include defineColorHSL(--color-grey-darker, 0, 0%, 11%);
+  @include defineColorHSL(--color-grey-light, 0, 0%, 64%);
+  @include defineColorHSL(--color-grey-lighter, 0, 0%, 76%);
+
+  // Colors: Typography
+  // --color-link: ;
+  // --color-font: ;;;;;
+}

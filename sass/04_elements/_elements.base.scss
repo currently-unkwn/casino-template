@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-primary);
+  font-size: var(--text-base-size);
+  font-weight: var(--font-regular);
+  line-height: var(--body-line-height);
+  background-color: var(--color-white);
+  overflow-x: hidden;
+}

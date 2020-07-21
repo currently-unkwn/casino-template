@@ -1,0 +1,13 @@
+//
+// #UTILITIES: OVERFLOW
+//
+
+.u-overflow {
+  &--hidden {
+    overflow: hidden;
+  }
+
+  &--auto {
+    overflow: auto;
+  }
+}

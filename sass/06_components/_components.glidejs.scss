@@ -1,0 +1,82 @@
+.glide {
+  &__slide {
+    height: initial;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }
+
+  &__bullets {
+    margin-top: var(--space-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (min-width: $media-lg) {
+      display: none;
+    }
+  }
+
+  &__bullet {
+    width: var(--icon-xxxs);
+    height: var(--icon-xxxs);
+    // background-color: $color-white;
+    border: 1px solid var(--color-primary);
+    // opacity: 0.25;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 3px;
+
+    // transform: scale(0.6);
+
+    // transition: all 0.1s;
+
+    &--active {
+      // opacity: 1;
+      // transform: scale(1);
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+// Slider Arrows
+
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -31px;
+  display: none;
+  background-color: var(--color-primary);
+
+  transition: all 0.2s;
+
+  @media only screen and (min-width: $media-sm) {
+    display: block;
+  }
+
+  svg {
+    width: var(--icon-xs);
+    height: var(--icon-xs);
+    fill: var(--color-white);
+    vertical-align: middle;
+  }
+
+  &--prev {
+    left: -20px;
+  }
+
+  &--next {
+    right: -20px;
+  }
+
+  &:hover {
+    background-color: lightness(var(--color-primary), 1.1);
+  }
+}

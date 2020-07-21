@@ -1,0 +1,89 @@
+// Components: Navbar
+
+.c-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: var(--space-xl);
+  width: 100%;
+  // background-color: $color-primary-light;
+  background-color: var(--color-black);
+  transition: background-color 0.4s;
+
+  // @media only screen and (min-width: $media-md) {
+  //   display: none;
+  // }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @supports (grid-area: auto) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__menu-btn-wrap {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-btn {
+  }
+
+  &__logo {
+    justify-self: center;
+  }
+
+  &__account-control {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    &,
+    &:link,
+    &:visited {
+      padding: var(--space-lg) var(--space-md);
+      min-width: 0;
+    }
+  }
+
+  // &__account-control {
+  //   flex: 1;
+  //   display: flex;
+  //   align-self: center;
+  //   justify-content: flex-end;
+  // }
+
+  // Functionality
+
+  &.is-active {
+    // background-color: transparent;
+  }
+
+  &.is-active .c-hamburger-btn {
+    & span {
+      background-color: transparent;
+      transform: translateX(-5px);
+    }
+
+    &:before {
+      top: 5px;
+      transform: rotate(135deg);
+    }
+
+    &:after {
+      bottom: 9px;
+      transform: rotate(-135deg);
+    }
+  }
+}

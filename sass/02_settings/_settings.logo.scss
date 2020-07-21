@@ -1,0 +1,10 @@
+// SETTINGS: LOGO
+:root {
+  --logo-height: 20px;
+}
+
+@media only screen and (min-width: $media-sm) {
+  :root {
+    --logo-height: 25px;
+  }
+}

@@ -1,0 +1,55 @@
+// SETTINGS: SPACING
+
+:root {
+  // Base unit
+  --spacing-unit: 1em;
+
+  // Projects Spacings
+  // 4
+  // 6
+  // 8
+  // 12
+  // 16
+  // 18
+  // 20
+  // 24
+  // 32
+  // 40
+
+  // Fibonacci sequence
+  // 0.125 = 2
+  // 0.25 = 4
+  // 0.375 = 6
+  // 0.5 = 8
+  // 0.75 = 12 — sm
+  // 1 = 16
+  // 1.125 = 18
+  // 1.25 = 20
+  // 1.5 = 24
+  // 2 = 32
+  // 2.5 = 40
+
+  --space-4xs: calc(0.125 * var(--spacing-unit)); // 2px
+  --space-3xs: calc(0.25 * var(--spacing-unit)); // 4px
+  --space-xxs: calc(0.375 * var(--spacing-unit)); // 6px
+  --space-xs: calc(0.5 * var(--spacing-unit)); // 8px
+  --space-sm: calc(0.75 * var(--spacing-unit)); // 12px
+  --space-md: var(--spacing-unit); // 16px
+  --space-lg: calc(1.125 * var(--spacing-unit)); // 18px
+  --space-xl: calc(1.25 * var(--spacing-unit)); // 20px
+  --space-xxl: calc(1.5 * var(--spacing-unit)); // 24px
+  --space-3xl: calc(2 * var(--spacing-unit)); // 32px
+  --space-4xl: calc(2.5 * var(--spacing-unit)); // 40px
+  --space-5xl: calc(3.75 * var(--spacing-unit)); // 60px
+
+  // Spacing based on individual projects scale
+  // Example
+  // --space-xxxxs: calc(0.125 * var(--spacing-unit);
+  // --space-xxxs: calc(0.25 * var(--spacing-unit);
+}
+
+@media only screen and (min-width: $media-md) {
+  :root {
+    --spacing-unit: 1em;
+  }
+}

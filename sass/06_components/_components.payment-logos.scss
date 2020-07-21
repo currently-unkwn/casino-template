@@ -1,0 +1,25 @@
+// Components: Payments
+
+.c-payment-logos {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    svg {
+      margin-top: var(--space-sm);
+      margin-bottom: var(--space-sm);
+      flex-basis: 33.333%;
+      height: calc(var(--icon-sm) - 8px);
+      width: auto;
+      fill: var(--color-black);
+
+      @media only screen and (min-width: $media-md) {
+        height: calc(var(--icon-sm) - 4px);
+      }
+
+      @media only screen and (min-width: $media-lg) {
+        flex-basis: 16%;
+      }
+    }
+  }
+}

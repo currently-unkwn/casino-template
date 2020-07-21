@@ -1,0 +1,48 @@
+// Components: Testimonial
+
+.c-testimonial {
+  padding: var(--space-xxl);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-black);
+  border-radius: 25px;
+  background-color: var(--color-white);
+
+  &__content {
+  }
+  &__header {
+    // width: 100%;
+    margin-bottom: var(--space-xl);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__avatar {
+    margin-bottom: var(--space-xxl);
+    flex-basis: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  &__name {
+  }
+
+  &__rating {
+  }
+
+  &__star {
+    width: var(--icon-xs);
+    height: var(--icon-xs);
+
+    &--checked {
+      fill: var(--color-gold);
+    }
+  }
+
+  &__text {
+  }
+}

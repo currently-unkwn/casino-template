@@ -1,0 +1,48 @@
+// Components: Buttons
+
+.c-btn {
+  &,
+  &:link,
+  &:visited {
+    // padding: 0.67em;
+    padding: var(--space-xl) var(--space-sm);
+    display: inline-flex; // In case button is a link
+    justify-content: center;
+    // min-width: var(--btn-min-width);
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    // text-align: center;
+    line-height: 1;
+    // color: $color-black;
+    color: var(--color-black);
+    text-decoration: none;
+    // border: 3px solid $color-primary-x-light-2;
+    // background-color: var(--color-primary);
+    // Making border opacity visible
+    -webkit-background-clip: padding-box; // For Safari
+    background-clip: padding-box; // for IE9+, Firefox 4+, Opera, Chrome
+    // border-radius: $border-radius-md;
+    // border-radius: $border-radius-xxxs;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    transform: translateY(5px);
+  }
+
+  &--primary {
+    &,
+    &:link,
+    &:visited {
+      min-width: var(--btn-min-width);
+      background-color: var(--color-primary);
+    }
+
+    &:hover {
+      background-color: lightness(var(--color-primary), 1.1);
+    }
+  }
+}

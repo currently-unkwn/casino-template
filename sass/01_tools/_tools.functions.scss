@@ -1,0 +1,73 @@
+//
+// #TOOLS: FUNCTIONS
+//
+
+// Function: Pixel to Percentage
+
+// Converts pixel to percentages. Used for Font Sizes
+// Parameters:
+// - $target-font-size {number} : The desired font size for the target
+// - $default-font-size {number} : Base font size for the body's text
+
+@function px-to-percent($target-font-size, $base-font-size: 16) {
+  @return percentage($target-font-size / $base-font-size);
+}
+
+@function px-to-em($target-font-size, $base-font-size: 16) {
+  @return ($target-font-size / $base-font-size) * 1em;
+}
+
+@function px-to-rem($target-font-size, $base-font-size: 16) {
+  @return ($target-font-size / $base-font-size) * 1rem;
+}
+
+// Function: Replace substring with another string
+// Credits: https://css-tricks.com/snippets/sass/str-replace-function/
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace +
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
+  }
+  @return $string;
+}
+
+// Function: Alpha
+@function alpha($color, $opacity) {
+  $color: str-replace($color, "var(");
+  $color: str-replace($color, ")");
+  $color-h: var(#{$color + "-h"});
+  $color-s: var(#{$color + "-s"});
+  $color-l: var(#{$color + "-l"});
+  @return hsla($color-h, $color-s, $color-l, $opacity);
+}
+
+// Function: Lightness
+@function lightness($color, $lightnessMultiplier) {
+  $color: str-replace($color, "var(");
+  $color: str-replace($color, ")");
+  $color-h: var(#{$color + "-h"});
+  $color-s: var(#{$color + "-s"});
+  $color-l: var(#{$color + "-l"});
+  @return hsl($color-h, $color-s, calc(#{$color-l} * #{$lightnessMultiplier}));
+}
+
+// Function: Saturation
+@function saturation($color, $saturationMultiplier) {
+  $color: str-replace($color, "var(");
+  $color: str-replace($color, ")");
+  $color-h: var(#{$color + "-h"});
+  $color-s: var(#{$color + "-s"});
+  $color-l: var(#{$color + "-l"});
+  @return hsl($color-h, calc(#{$color-s} * #{$saturationMultiplier}), $color-l);
+}
+
+// Aspect Ratio
+
+@function aspect-ratio($ratio-1, $ratio-2) {
+  @return calc(100% / (#{$ratio-1} / #{$ratio-2}));
+}

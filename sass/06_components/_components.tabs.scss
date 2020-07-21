@@ -1,0 +1,55 @@
+// Components: Tabs
+
+.c-tabs {
+  //   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  // max-width: 700px;
+  border: 1px solid var(--color-primary);
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__tab-name {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    // width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    svg {
+      width: var(--icon-sm);
+      height: var(--icon-sm);
+      margin-right: var(--space-xs);
+    }
+  }
+
+  &__tab-content {
+    padding: var(--space-xl);
+    flex-basis: 100%;
+    order: 99;
+    display: none;
+    text-align: left;
+  }
+
+  &__tab-name:hover {
+    background-color: var(--color-white);
+  }
+
+  input:checked + &__tab-name {
+    background-color: var(--color-white);
+  }
+
+  input:checked + &__tab-name + &__tab-content {
+    display: block;
+  }
+}

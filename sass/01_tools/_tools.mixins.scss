@@ -1,0 +1,14 @@
+//
+// #TOOLS: MIXINS
+//
+
+// Mixin: Defining HSL Colors
+// Defining each color so that we could generate hue, saturation and lightness values automatically in CSS
+// Based on here: https://codyhouse.co/blog/post/how-to-combine-sass-color-functions-and-css-variables
+
+@mixin defineColorHSL($color, $hue, $saturation, $lightness) {
+  #{$color}: unquote("hsl(#{$hue}, #{$saturation}, #{$lightness})");
+  #{$color}-h: #{$hue};
+  #{$color}-s: #{$saturation};
+  #{$color}-l: #{$lightness};
+}

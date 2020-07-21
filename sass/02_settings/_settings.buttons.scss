@@ -1,0 +1,11 @@
+:root {
+  --btn-min-width: 10rem; // 160px
+  --btn-font-size: 0.875em; // 14px
+}
+
+@media only screen and (min-width: $media-sm) {
+  :root {
+    --btn-min-width: 12.5rem; // 200px
+    --btn-font-size: 1em; // 16px
+  }
+}

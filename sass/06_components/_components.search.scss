@@ -1,0 +1,26 @@
+// Components: Search
+
+.c-search {
+  &__form {
+  }
+
+  &__field {
+    margin-left: -1rem;
+    margin-right: -2.5rem;
+    width: 75%;
+    transition: width 0.3s ease;
+
+    &:focus {
+      width: 100%;
+      outline: none;
+    }
+  }
+
+  &__btn {
+    transform: translateY(2px);
+
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+}

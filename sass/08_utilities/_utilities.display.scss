@@ -1,0 +1,41 @@
+//
+// #UTILITIES: DISPLAY
+//
+
+.u-display {
+  &--none {
+    display: none;
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--inline-block {
+    display: inline-block;
+  }
+
+  &--flex {
+    display: flex;
+  }
+
+  &--grid {
+    display: grid;
+  }
+
+  &--table {
+    display: table;
+  }
+
+  &--table-cell {
+    display: table-cell;
+  }
+
+  &--table-row {
+    display: table-row;
+  }
+
+  &--inline {
+    display: inline;
+  }
+}

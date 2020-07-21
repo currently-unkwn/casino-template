@@ -1,0 +1,48 @@
+// Components: Text Component
+
+.c-text-component {
+  --line-height-multiplier: 1;
+  --text-vspace-multiplier: 1.6;
+
+  @media only screen and (min-width: $media-md) {
+    :root {
+      --line-height-multiplier: 1.1;
+    }
+  }
+
+  & > *:first-child {
+    margin-top: 0;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: calc(
+      var(--spacing-unit) * 0.25 * var(--text-vspace-multiplier)
+    );
+    line-height: calc(
+      var(--heading-line-height) * var(--line-height-multiplier)
+    );
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  &__block {
+    margin-bottom: calc(
+      var(--spacing-unit) * 0.75 * var(--text-vspace-multiplier)
+    );
+  }
+
+  p,
+  li,
+  blockquote {
+    line-height: calc(var(--body-line-height) * var(--line-height-multiplier));
+  }
+}

@@ -1,0 +1,10 @@
+// SETTINGS: SPACING
+:root {
+  --tile-menu-font-size: 0.625rem;
+}
+
+@media only screen and (min-width: $media-sm) {
+  :root {
+    --tile-menu-font-size: var(--text-base-size);
+  }
+}

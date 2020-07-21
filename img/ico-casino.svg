@@ -1,0 +1,27 @@
+<svg id="icon_casino" data-name="icon casino" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_6" data-name="Group 6">
+    <g id="Group_5" data-name="Group 5">
+      <path id="Path_12" data-name="Path 12" d="M15.13,9.39H4.17a.781.781,0,0,0-.78.78v6.78a.781.781,0,0,0,.78.78H15.13a.781.781,0,0,0,.78-.78V10.17A.781.781,0,0,0,15.13,9.39ZM7.04,16.17H4.96V10.95H7.05v5.22Zm3.66,0H8.61V10.95H10.7Zm3.65,0H12.26V10.95h2.09Z"/>
+    </g>
+  </g>
+  <g id="Group_8" data-name="Group 8">
+    <g id="Group_7" data-name="Group 7">
+      <path id="Path_13" data-name="Path 13" d="M21.65,0a2.346,2.346,0,0,0-.78,4.56v6.4H19.3V9.66A9.65,9.65,0,1,0,0,9.65v12A2.347,2.347,0,0,0,2.35,24H16.96a2.354,2.354,0,0,0,2.35-2.35V12.52h2.35a.781.781,0,0,0,.78-.78V4.56A2.348,2.348,0,0,0,21.65,0ZM17.74,21.65a.781.781,0,0,1-.78.78H2.35a.781.781,0,0,1-.78-.78v-12a8.09,8.09,0,1,1,16.18,0v12ZM21.65,3.13a.78.78,0,1,1,.78-.78A.781.781,0,0,1,21.65,3.13Z"/>
+    </g>
+  </g>
+  <g id="Group_10" data-name="Group 10">
+    <g id="Group_9" data-name="Group 9">
+      <path id="Path_14" data-name="Path 14" d="M14.82,6.78a5.486,5.486,0,0,0-10.34,0,.784.784,0,0,0,1.48.52,3.916,3.916,0,0,1,7.38.01.784.784,0,0,0,.74.52.575.575,0,0,0,.26-.05A.784.784,0,0,0,14.82,6.78Z"/>
+    </g>
+  </g>
+  <g id="Group_12" data-name="Group 12">
+    <g id="Group_11" data-name="Group 11">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="0.78" cy="0.78" r="0.78" transform="translate(8.87 6.26)"/>
+    </g>
+  </g>
+  <g id="Group_14" data-name="Group 14">
+    <g id="Group_13" data-name="Group 13">
+      <path id="Path_15" data-name="Path 15" d="M13.57,19.3H5.74a.78.78,0,0,0,0,1.56h7.83a.78.78,0,0,0,0-1.56Z"/>
+    </g>
+  </g>
+</svg>

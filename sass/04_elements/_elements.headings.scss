@@ -1,0 +1,15 @@
+h1,
+h2 {
+  text-transform: uppercase;
+  line-height: var(--heading-line-height);
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  font-size: calc(var(--text-lg) * 2);
+}
+
+h2 {
+  font-size: var(--text-xxl);
+  font-weight: var(--font-bold);
+}

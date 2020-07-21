@@ -1,0 +1,33 @@
+// Components: Nav
+
+.c-nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // align-items: center;
+
+    @media only screen and (min-width: $media-sm) {
+      text-align: left;
+    }
+  }
+
+  &__item {
+    margin-bottom: var(--space-md);
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      color: var(--color-white);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// Components: Input Area
+
+.c-input-area {
+  padding: var(--input-area-padding-x) var(--input-area-padding-y);
+  width: 100%;
+  display: block;
+  color: var(--color-grey-dark);
+  // border: 1px solid var(--color-black);
+  border: none;
+  background-color: var(--color-white);
+  background-clip: padding-box;
+
+  &:focus {
+    outline: none;
+    // border: 1px solid var(--color-primary);
+  }
+}

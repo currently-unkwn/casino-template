@@ -1,0 +1,9 @@
+// Components: Logo
+
+.c-logo {
+  height: var(--logo-height);
+
+  &--large {
+    height: 9rem;
+  }
+}

@@ -1,0 +1,116 @@
+// Components: Footer
+
+.c-footer {
+  &__top {
+    padding-top: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    @supports (grid-area: auto) {
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      //   align-items: center;
+    }
+
+    @media only screen and (min-width: $media-lg) {
+      justify-content: space-between;
+    }
+  }
+
+  &__lang {
+    height: var(--icon-md);
+    width: var(--icon-md);
+
+    align-self: flex-start;
+    order: 2;
+
+    @supports (grid-area: auto) {
+      grid-column: 2 / -1;
+      grid-row: 1 / 2;
+      justify-self: flex-end;
+    }
+
+    @media only screen and (min-width: $media-lg) {
+      order: 1;
+
+      @supports (grid-area: auto) {
+        grid-column: 1 / 2;
+        justify-self: flex-start;
+      }
+    }
+  }
+
+  &__navigation {
+    margin-right: auto;
+    order: 1;
+
+    @media only screen and (min-width: $media-lg) {
+      margin-right: initial;
+      order: 2;
+
+      @supports (grid-area: auto) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+
+  &__socials {
+    align-self: flex-end;
+    order: 2;
+
+    @supports (grid-area: auto) {
+      grid-column: 2 / -1;
+      grid-row: 1 / 2;
+      justify-self: flex-end;
+    }
+
+    @media only screen and (min-width: $media-lg) {
+      order: 3;
+    }
+  }
+
+  &__license {
+    // margin-bottom: $space-sm;
+    margin-left: auto;
+    margin-right: auto;
+    // max-width: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    // @media only screen and (min-width: $media-md) {
+    //   max-width: initial;
+    // }
+  }
+
+  &__license-img {
+    margin-left: var(--space-sm);
+    margin-right: var(--space-sm);
+    margin-bottom: var(--space-md);
+
+    @media only screen and (min-width: $media-sm) {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__license-18,
+  &__license-gamcare,
+  &__license-gambleaware {
+    height: var(--icon-sm);
+    width: auto;
+    opacity: 0.4;
+  }
+
+  &__dmca {
+    height: var(--space-md);
+    width: auto;
+  }
+}
