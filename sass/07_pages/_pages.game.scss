@@ -1,0 +1,63 @@
+// Pages: Game
+
+// Header
+
+.game-header {
+  background-image: url(../img/bonuses-bg.jpg);
+  background-size: cover;
+
+  &__content {
+    padding-top: var(--space-xxl);
+    padding-bottom: var(--space-4xl);
+    display: flex;
+    // align-items: center;
+
+    @supports (grid-area: auto) {
+      display: grid;
+      grid-template-columns: 1fr min-content;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    width: 100%;
+    // max-width: 68.75em;
+    border: 8px solid var(--color-primary);
+
+    @supports (grid-area: auto) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__btn-group {
+    // position: absolute;
+    // top: 24px;
+    // right: 24px;
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    background-color: var(--color-primary);
+
+    @supports (grid-area: auto) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      //   align-self: flex-start;
+      justify-self: flex-end;
+    }
+
+    svg {
+      margin-left: var(--space-xs);
+      margin-right: var(--space-xs);
+      width: var(--icon-xs);
+      height: var(--icon-xs);
+      fill: var(--color-white);
+
+      &:not(:last-child) {
+        margin-bottom: var(--space-lg);
+      }
+    }
+  }
+}
