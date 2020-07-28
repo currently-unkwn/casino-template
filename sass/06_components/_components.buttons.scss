@@ -16,7 +16,7 @@
     // text-align: center;
     line-height: 1;
     // color: $color-black;
-    color: var(--color-black);
+    color: var(--color-cream);
     text-decoration: none;
     // border: 3px solid $color-primary-x-light-2;
     // background-color: var(--color-primary);
@@ -38,11 +38,11 @@
     &:link,
     &:visited {
       min-width: var(--btn-min-width);
-      background-color: var(--color-primary);
+      background-color: var(--color-secondary);
     }
 
     &:hover {
-      background-color: lightness(var(--color-primary), 1.1);
+      background-color: lightness(var(--color-secondary), 1.1);
     }
   }
 }

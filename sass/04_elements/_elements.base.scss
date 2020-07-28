@@ -10,6 +10,7 @@ body {
   font-size: var(--text-base-size);
   font-weight: var(--font-regular);
   line-height: var(--body-line-height);
-  background-color: var(--color-white);
+  color: var(--color-body);
+  background-color: var(--color-grey-lightest);
   overflow-x: hidden;
 }

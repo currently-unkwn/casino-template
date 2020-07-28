@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     purgecss: {
       my_target: {
         options: {
-          content: ["index.html"],
+          content: ["index.html", "game.html"],
           whitelist: [
             "is-active",
             "is-expanded",

@@ -11,7 +11,7 @@
       flex-basis: 33.333%;
       height: calc(var(--icon-sm) - 8px);
       width: auto;
-      fill: var(--color-black);
+      fill: var(--color-primary-light);
 
       @media only screen and (min-width: $media-md) {
         height: calc(var(--icon-sm) - 4px);

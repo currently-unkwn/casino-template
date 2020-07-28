@@ -33,6 +33,7 @@
     &,
     &:link,
     &:visited {
+      color: var(--color-cream);
       text-transform: uppercase;
       transition: all 0.3s;
     }

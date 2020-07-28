@@ -29,13 +29,20 @@ $color-font: $gray-lead;
 
 :root {
   // Colors: Project Primary
-  @include defineColorHSL(--color-primary, 38, 55%, 65%);
-  @include defineColorHSL(--color-primary-light, 42, 78%, 77%);
+  @include defineColorHSL(--color-primary, 218, 22%, 14%);
+  @include defineColorHSL(--color-primary-light, 200, 27%, 82%);
   @include defineColorHSL(--color-primary-lighter, 39, 57%, 89%);
+
+  @include defineColorHSL(--color-primary-dark, 180, 33%, 1%);
+
+  // Colors: Project Secondary
+  @include defineColorHSL(--color-secondary, 205, 35%, 37%);
 
   // Colors: Warm
 
   @include defineColorHSL(--color-gold, 45, 100%, 51%);
+  @include defineColorHSL(--color-cream, 48, 86%, 92%);
+  @include defineColorHSL(--color-hazelnut, 38, 40%, 60%);
 
   // Colors: Cool
 
@@ -50,8 +57,9 @@ $color-font: $gray-lead;
   @include defineColorHSL(--color-grey-darker, 0, 0%, 11%);
   @include defineColorHSL(--color-grey-light, 0, 0%, 64%);
   @include defineColorHSL(--color-grey-lighter, 0, 0%, 76%);
+  @include defineColorHSL(--color-grey-lightest, 0, 0%, 97%);
 
   // Colors: Typography
   // --color-link: ;
-  // --color-font: ;;;;;
+  --color-body: var(--color-primary);
 }

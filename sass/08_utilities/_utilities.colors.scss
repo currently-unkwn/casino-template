@@ -12,6 +12,16 @@
   }
 }
 
+.u-color-primary-light {
+  &--text {
+    color: var(--color-primary-light);
+  }
+
+  &--bg {
+    background-color: var(--color-primary-light);
+  }
+}
+
 .u-color-primary-lighter {
   &--text {
     color: var(--color-primary-lighter);
@@ -19,6 +29,16 @@
 
   &--bg {
     background-color: var(--color-primary-lighter);
+  }
+}
+
+.u-color-primary-dark {
+  &--text {
+    color: var(--color-primary-dark);
+  }
+
+  &--bg {
+    background-color: var(--color-primary-dark);
   }
 }
 
@@ -35,6 +55,26 @@
 }
 
 // WARM
+
+.u-color-cream {
+  &--text {
+    color: var(--color-cream);
+  }
+
+  &--bg {
+    background-color: var(--color-cream);
+  }
+}
+
+.u-color-hazelnut {
+  &--text {
+    color: var(--color-hazelnut);
+  }
+
+  &--bg {
+    background-color: var(--color-hazelnut);
+  }
+}
 
 // COOL
 

@@ -5,17 +5,19 @@
   background-size: cover;
   background-position: left;
 
-  @media only screen and (min-width: $media-sm) {
-    text-align: center;
-  }
-
   &--sport {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(../img/banner-sport_mob.jpg);
+    background-image: linear-gradient(
+        rgba(28, 34, 44, 0.3),
+        rgba(28, 34, 44, 0.3)
+      ),
+      url(../img/banner-sport-2_mob.jpg);
 
     @media only screen and (min-width: $media-sm) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(../img/banner-sport.jpg);
+      background-image: linear-gradient(
+          rgba(28, 34, 44, 0.3),
+          rgba(28, 34, 44, 0.3)
+        ),
+        url(../img/banner-sport-2.jpg);
     }
   }
 
